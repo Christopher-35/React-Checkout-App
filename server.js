@@ -9,13 +9,13 @@ const port = 3000;
 const morgan = require('morgan');
 //DATABASE---------------------------------------
 const mysql = require('mysql');
-
+const password = require('./public/password.js')
 
 
 let connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'sparkie1218',
+  password: password,
   database: 'userinfo'
 })
 
